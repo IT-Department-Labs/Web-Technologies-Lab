@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Features in HTML</title>
+	<script type="text/javascript">
+	function init() {
+		var degCent = prompt("Please enter temperature");
+		var degFahren = 9 / 5 * degCent + 32;
+		console.log(degFahren);
+
+		after_init(); 
+	}
+
+	function after_init() {
+		var userAge = prompt(“Please enter your age”);
+		if (userAge == 0) {
+			alert(“So you’re a baby!”);
+		}
+		else if ( userAge < 0 || userAge > 200)
+			alert(“I think you may be lying about your age”);
+		else {
+			alert(“That’s a good age”);
+		}
+	}
+	</script>
+</head>
+<body onload="init();">
+	<h1>Hello World</h1>
+	<script type="text/javascript">
+		for(var i = 1; i <= 12; i ++) {
+			document.write("12x"+i+"="+12*i+"<br>");
+		}
+	</script>
+</body>
+</html>
